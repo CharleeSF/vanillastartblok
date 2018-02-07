@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* General settings */
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(rgb(186, 241, 45) -50%, rgb(97, 128, 21) 200%);
+}
+
+a {
+    text-decoration: none;
+    color: #009EE2;
+}
+
+a:hover {
+    color: rgb(134, 219, 255);
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header stuff */
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: -1px;
+    height: 8rem;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background: linear-gradient(slategray, #009EE2, slategray);
+}
+
+header:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0,0,0,0.1);
+}
+
+header ul li:nth-child(1) {
+    color: #941B80;
+}
+
+header ul li:nth-child(2) {
+    color: #009EE2;
+}   
+
+header ul li:nth-child(3) a {
+    color: #93C01F;
+}
+
+header ul li:nth-child(4) {
+    color: #EE7D10;
+}
+
+hgroup {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+hgroup:hover {
+    margin-left: 10px;
+}
+
+nav {
+    width: 70%;
+}
+
+hgroup {
+    text-align: left;
+}
+
+hgroup h1, hgroup h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+header hgroup h1 {
+    font-size: 2.5em;
+}
+
+hgroup h2 {
+    display: flex;
+    align-items: baseline;
+}
+
+hgroup span:first-child {
+    border: solid black 1px;
+    position: relative;
+    bottom: -15px;
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: rgba(255, 255, 255, .6);
+}
+
+header li {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+    font-size: 2rem;
+}
+
+header li:hover {
+    font-size: 1.8rem;
+}
+
+
+/* Container, main, aside */
+
+.container {
+    display: flex;
+    width: 85%;
+    min-width: 600px;
+    margin: auto;
+    padding: 0px;
+    margin-top: 0px;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+main, aside {
+    margin-top: 8.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24),
+                0px -1px 1px rgba(0,0,0,.12);
+}
+
+
+main {
+    padding: 10px;
+    width: 70%;
+    float: left;
+    clear: left;
+    /* background: linear-gradient(rgba(255, 255, 255, .5) -100%, rgba(255,255,255, .3)); */
+}
+
+aside {
+    padding: 8px;
+    width:23%;
+    background: rgba(0, 0, 0, .1);
+}
+
+aside article {
+    text-align: right;
+}
+
+
+aside h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside p {
+    margin-top: 0px;
+}
+
+aside h3 {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+/* Footer stuff */
+
+footer {
+    clear: both;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    box-shadow: 0px -1px 1px rgba(0,0,0,.12)
+}    
+
+footer > ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+footer ul li:first-child {
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+footer > ul > li {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > ul > li > ul {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer > ul > li:not(:last-child) {
+    border-right: black solid 2px;
+}
+
+footer > ul > li:last-child input, footer > ul > li:last-child button {
+    background-color: rgba(255, 255, 255, .5);
+}
