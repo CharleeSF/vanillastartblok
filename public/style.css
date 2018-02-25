@@ -1,50 +1,63 @@
+
 body {
     margin: 0;
+    font-family: sans-serif;
 }
-body > div {
-
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 4em auto;
+h1, h2, h3, h4, h5 {
+    color: teal;
 }
-header, main, aside, footer {
-    padding: .5rem;
+header, main, footer, aside {
+    padding: 1em;
 }
 header {
-
-    grid-column: span 3;
-    display: flex;
-    justify-content:  space-between;
-    align-items: center;
     background-color: tomato;
-
 }
-header div p {
+header h1 {
+    color: white;
+    font-size: 3em;
+    border-bottom: 5px solid teal;
     display: inline-block;
+    margin-top: 2em;
 }
-header div p::first-letter{
-    color: transparent;
-
+header ul {
+    padding: 0;
+    margin: 0;
 }
-header nav ul {
-    display: flex;
+header ul li {
+    display: inline-block;
+    padding: 1em;
 }
-header nav ul li {
-    margin: 1em;
+header ul li:hover {
+    background-color: orange;
+}
+header img {
+    margin-right: 1em;
 }
 main {
-    grid-column: span 2;
+    background-color: rgb(230, 230, 230)
 }
+
 aside {
-    grid-column: span 1;
-    background-color: rgb(208, 208, 208)
+    background-color: teal;
+    color: black;
+}
+aside h1, aside h2, aside h3, aside h4, aside h5 {
+    color: white;
+}
+aside li {
+    text-decoration: none;
+    list-style: none;
+}
+main article h1 {
+    padding: 0.5rem;
+    border: 1px tomato solid;
+    display: inline-block;
+    border-radius: 10px;
 }
 footer {
-
-    grid-column: span 3;
-    background-color: black;
+    background-color: rgb(47, 47, 47);
     color: white;
 }
 footer ul {
-    display: flex;
+
 }
