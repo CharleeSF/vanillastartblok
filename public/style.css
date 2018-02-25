@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+}
+body > div {
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 4em auto;
+}
+header, main, aside, footer {
+    padding: .5rem;
+}
+header {
+
+    grid-column: span 3;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    background-color: tomato;
+
+}
+header div p {
+    display: inline-block;
+}
+header div p::first-letter{
+    color: transparent;
+
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    margin: 1em;
+}
+main {
+    grid-column: span 2;
+}
+aside {
+    grid-column: span 1;
+    background-color: rgb(208, 208, 208)
+}
+footer {
+
+    grid-column: span 3;
+    background-color: black;
+    color: white;
+}
+footer ul {
+    display: flex;
+}
